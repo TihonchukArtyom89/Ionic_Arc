@@ -42,6 +42,7 @@ namespace Ionic_Arc
             this.choose_btn.TabIndex = 0;
             this.choose_btn.Text = "Выберите  папку";
             this.choose_btn.UseVisualStyleBackColor = true;
+            this.choose_btn.Click += new System.EventHandler(this.choose_btn_Click);
             // 
             // button2
             // 
@@ -51,6 +52,7 @@ namespace Ionic_Arc
             this.button2.TabIndex = 1;
             this.button2.Text = "Сохранить архив";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // AdresPath
             // 

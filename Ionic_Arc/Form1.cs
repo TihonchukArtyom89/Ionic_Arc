@@ -17,5 +17,21 @@ namespace Ionic_Arc
         {
             InitializeComponent();
         }
+        
+        FolderBrowserDialog fo = new FolderBrowserDialog();
+
+        private void choose_btn_Click(object sender, EventArgs e)
+        {
+            if(fo.ShowDialog()==DialogResult.OK)
+            {
+                AdresPath.Text = fo.SelectedPath;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            
+        }
     }
 }
